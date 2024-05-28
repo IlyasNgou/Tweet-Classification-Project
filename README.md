@@ -52,6 +52,7 @@ grid_search = GridSearchCV(LogisticRegression(), param_grid, cv=5, scoring='accu
 grid_search.fit(X_train_tfidf, y_train)
 best_params_lr = grid_search.best_params_
 print(f"Best parameters for LogisticRegression: {best_params_lr}")
+```
 
 ## Performance
 
