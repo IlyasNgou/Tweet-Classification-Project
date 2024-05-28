@@ -88,3 +88,28 @@ print(classification_report(y_test, y_pred_lr))
 ### Data Augmentation
 
 * Synthetic Data Generation: Use techniques like data augmentation or synthetic data generation to increase the size and diversity of the training dataset.
+
+## Installation
+To run this project, ensure you have Python installed. Clone the repository and install the required packages:
+
+```bash
+git clone https://github.com/yourusername/tweet-classification.git
+cd tweet-classification
+pip install -r requirements.txt
+```
+
+## Usage
+
+Follow these steps to run the project:
+
+1. Preprocess the data and extract features.
+2. Train the models using the provided scripts.
+3. Evaluate the models and perform hyper-parameter tuning.
+4. Analyze the performance and consider the suggested future improvements.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+This project is licensed under the Apache License 2.0.
