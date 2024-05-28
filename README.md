@@ -52,3 +52,14 @@ grid_search = GridSearchCV(LogisticRegression(), param_grid, cv=5, scoring='accu
 grid_search.fit(X_train_tfidf, y_train)
 best_params_lr = grid_search.best_params_
 print(f"Best parameters for LogisticRegression: {best_params_lr}")
+
+## Performance
+
+The performance of each model is evaluated using accuracy and detailed classification reports. Below is an example of how the performance is reported:
+```python
+from sklearn.metrics import accuracy_score, classification_report
+
+y_pred_lr = lr_model.predict(X_test_tfidf)
+print("Logistic Regression Accuracy:", accuracy_score(y_test, y_pred_lr))
+print(classification_report(y_test, y_pred_lr))
+
